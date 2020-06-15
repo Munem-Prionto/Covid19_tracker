@@ -1,0 +1,193 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+:root {
+    font-size: 16px;
+}
+
+body {
+    background-color: #3b3a30;
+    overflow-x: hidden;
+    color: white;
+    font-family: 'Mukta', sans-serif;
+    width: 100vw;
+
+    
+    
+}
+li{
+    list-style: none;
+}
+header{
+    font-size: 1.5rem;
+    background-color: #c94c4c;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   
+}
+header > * {
+    padding: 10px 0px;
+}
+.container {
+    background-color: #292821;
+    /*background-color: #eea29a;*/
+    /*display: flex;
+    flex-direction: column;
+    align-items: center;*/
+    width: 70%;
+    margin: auto;
+}
+.global {
+    width: 50%;
+    margin: auto;
+    font-size: 1.3rem;
+    /*display: flex;
+    flex-direction: column;
+    align-items: flex-start;*/
+    padding-bottom: 50px;
+}
+.global h2 {
+    text-align: center;
+    font-size:2rem;
+}
+.global > * {
+    padding: 5px;
+}
+
+.particularCountry {
+    font-size: 1.3rem;
+    width: 50%;
+    margin: auto;
+    padding-bottom: 50px;
+    
+}
+.particularCountry h2 {
+    text-align: center;
+}
+.particularCountry .form {
+    text-align: center;
+    padding-bottom: 43px;
+}
+.particularCountry .inputText {
+    border: 1px solid white;
+    padding: 2px 15px;
+    margin: 0;
+    background: transparent;
+    width:  230px;
+    height: 30px;
+    color: white;
+    font-size: 1rem;
+
+}
+.listDiv h3 {
+    font-size: 2.5rem;
+    padding: 10px;
+
+}
+
+#list {
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    margin-bottom: 20px;
+}
+#list > * {
+    padding: 10px;
+    font-size: 1.3rem;
+}
+
+
+
+footer {
+    padding: 40px 0px;
+    text-align: center;
+    background-color: #292821;
+    font-size: 1.2rem;
+}
+footer a {
+    
+    color: white;
+}
+/*.p {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+*/
+.country {
+    font-size: 2rem;
+    padding-bottom: 10px;
+    font-weight: bold;
+}
+
+
+@media only screen and (min-width : 1250px) {
+    .global {
+        width: 30%;
+        
+    }
+    .particularCountry {
+        width: 30%;
+    }
+}
+
+@media only screen and (max-width: 1270px) {
+    #list {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+@media only screen and (max-width: 800px) {
+    #list {
+        grid-template-columns:  1fr;
+        width: 90%;
+        
+        margin: auto;
+    }
+
+}
+@media only screen and (max-width:1100px) {
+    .container {
+        width: 100%;
+    }
+}
+
+
+@media only screen and (max-width: 800px) {
+    .container {
+        width: 100%;
+    }
+
+  }
+/* FOR FONTS */
+@media only screen and (max-width: 420px) {
+    .global h2 {
+        text-align: start;
+    }
+    .particularCountry h2 {
+        text-align: start;
+    }
+
+    header {
+        font-size: 1rem;
+    }
+    .global {
+        width: 90%;
+        
+    }
+    .particularCountry {
+        width: 90%;
+    }
+    .particularCountry .form {
+      text-align: start;
+        
+    }
+    
+  }
+@media only screen and (max-width : 350px) {
+    .particularCountry .inputText {
+        width: 150px;
+    }
+}

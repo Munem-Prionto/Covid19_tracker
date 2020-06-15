@@ -24,16 +24,16 @@ const covidInfo = async () => {
     covidInfo()
     .then(data => {
         const globalInfo = data.Global;
-        console.log(globalInfo.NewConfirmed);
+        
         console.log(globalInfo);
         global.innerHTML =
         `
         <p>New Cases : ${numberWithCommas(globalInfo.NewConfirmed)}</p>
         <p>Total Cases : ${numberWithCommas(globalInfo.TotalConfirmed)}</p>
-        <p>New Recoverd : ${numberWithCommas(globalInfo.NewRecovered)}</p>
-        <p>Total Recoverd : ${numberWithCommas(globalInfo.TotalRecovered)}</p>
+        <p>New Recovered : ${numberWithCommas(globalInfo.NewRecovered)}</p>
+        <p>Total Recovered : ${numberWithCommas(globalInfo.TotalRecovered)}</p>
         <p>New Deaths : ${numberWithCommas(globalInfo.NewDeaths)}</p>
-        <p>Total Deaths : ${numberWithCommas(globalInfo.TotalConfirmed)}</p>
+        <p>Total Deaths : ${numberWithCommas(globalInfo.TotalDeaths)}</p>
         `;
        
     })
@@ -63,10 +63,10 @@ const covidInfo = async () => {
                     <p class="country">${currentCountry.Country}</p>
                     <p>New Cases : ${numberWithCommas(currentCountry.NewConfirmed)}</p>
                     <p>Total Cases : ${numberWithCommas(currentCountry.TotalConfirmed)}</p>
-                    <p>New Recoverd : ${numberWithCommas(currentCountry.NewRecovered)}</p>
-                    <p>Total Recoverd : ${numberWithCommas(currentCountry.TotalRecovered)}</p>
+                    <p>New Recovered : ${numberWithCommas(currentCountry.NewRecovered)}</p>
+                    <p>Total Recovered : ${numberWithCommas(currentCountry.TotalRecovered)}</p>
                     <p>New Deaths : ${numberWithCommas(currentCountry.NewDeaths)}</p>
-                    <p>Total Deaths : ${numberWithCommas(currentCountry.TotalConfirmed)}</p>
+                    <p>Total Deaths : ${numberWithCommas(currentCountry.TotalDeaths)}</p>
                     `;
               
             });

@@ -1,6 +1,6 @@
-## Covid19_tracker
+# Covid19_tracker
 
-# It tracks the number of covid19 virus affected people Globally. 
+## It tracks the number of covid19 virus affected people Globally. 
 
 It has features like 
  * New cases
@@ -12,7 +12,7 @@ It has features like
 
  You can access info for individual countries via searching
 
- Api used 
+ Api used <br/>
  https://covid19api.com/ by Kyle Redelinghuys
 
 

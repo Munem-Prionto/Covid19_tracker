@@ -30,8 +30,8 @@ const covidInfo = async () => {
         `
         <p>New Cases : ${numberWithCommas(globalInfo.NewConfirmed)}</p>
         <p>Total Cases : ${numberWithCommas(globalInfo.TotalConfirmed)}</p>
-        <p>New Recoverd : ${numberWithCommas(globalInfo.NewRecovered)}</p>
-        <p>Total Recoverd : ${numberWithCommas(globalInfo.TotalRecovered)}</p>
+        <p>New Recovered : ${numberWithCommas(globalInfo.NewRecovered)}</p>
+        <p>Total Recovered : ${numberWithCommas(globalInfo.TotalRecovered)}</p>
         <p>New Deaths : ${numberWithCommas(globalInfo.NewDeaths)}</p>
         <p>Total Deaths : ${numberWithCommas(globalInfo.TotalConfirmed)}</p>
         `;

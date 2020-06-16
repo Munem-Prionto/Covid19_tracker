@@ -49,7 +49,7 @@ const covidInfo = async () => {
         
         
         if(input.value.length > 0) {
-            const inputValue = input.value.toLowerCase();
+            const inputValue = input.value.trim().toLowerCase();
             covidInfo()
             .then(data => {
                 const countryArray = data.Countries;

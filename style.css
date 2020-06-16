@@ -6,16 +6,12 @@
 :root {
     font-size: 16px;
 }
-
 body {
     background-color: #3b3a30;
     overflow-x: hidden;
     color: white;
     font-family: 'Mukta', sans-serif;
     width: 100vw;
-
-    
-    
 }
 li{
     list-style: none;
@@ -34,39 +30,21 @@ header > * {
 }
 .container {
     background-color: #292821;
-    /*background-color: #eea29a;*/
-    /*display: flex;
-    flex-direction: column;
-    align-items: center;*/
     width: 70%;
     margin: auto;
 }
-.global {
+.sectionDiv {
     width: 50%;
     margin: auto;
     font-size: 1.3rem;
-    /*display: flex;
-    flex-direction: column;
-    align-items: flex-start;*/
     padding-bottom: 50px;
 }
-.global h2 {
+.sub-head {
     text-align: center;
     font-size:2rem;
 }
 .global > * {
     padding: 5px;
-}
-
-.particularCountry {
-    font-size: 1.3rem;
-    width: 50%;
-    margin: auto;
-    padding-bottom: 50px;
-    
-}
-.particularCountry h2 {
-    text-align: center;
 }
 .particularCountry .form {
     text-align: center;
@@ -81,14 +59,11 @@ header > * {
     height: 30px;
     color: white;
     font-size: 1rem;
-
 }
 .listDiv h3 {
     font-size: 2.5rem;
     padding: 10px;
-
 }
-
 #list {
     display: grid;
     grid-template-columns: 1fr 1fr ;
@@ -98,25 +73,12 @@ header > * {
     padding: 10px;
     font-size: 1.3rem;
 }
-
-
-
 footer {
     padding: 40px 0px;
     text-align: center;
     background-color: #292821;
     font-size: 1.2rem;
 }
-footer a {
-    
-    color: white;
-}
-/*.p {
-   display: flex;
-   flex-direction: column;
-   align-items: center;
-}
-*/
 .country {
     font-size: 2rem;
     padding-bottom: 10px;
@@ -154,30 +116,14 @@ footer a {
     }
 }
 
-
-@media only screen and (max-width: 800px) {
-    .container {
-        width: 100%;
-    }
-
-  }
-/* FOR FONTS */
 @media only screen and (max-width: 420px) {
-    .global h2 {
+    .sub-head {
         text-align: start;
     }
-    .particularCountry h2 {
-        text-align: start;
-    }
-
     header {
         font-size: 1rem;
     }
-    .global {
-        width: 90%;
-        
-    }
-    .particularCountry {
+    .sectionDiv {
         width: 90%;
     }
     .particularCountry .form {

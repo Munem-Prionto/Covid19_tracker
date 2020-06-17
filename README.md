@@ -13,6 +13,7 @@ It has features like
  You can access info for individual countries via searching
 
  Api used <br/>
- https://covid19api.com/ by Kyle Redelinghuys
+ * https://covid19api.com/ by Kyle Redelinghuys
+ * https://www.countryflags.io/
 
 

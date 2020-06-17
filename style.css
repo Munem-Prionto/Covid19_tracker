@@ -81,21 +81,19 @@ footer {
 }
 .country {
     font-size: 2rem;
-    padding-bottom: 10px;
+    
     font-weight: bold;
+    display: inline;
 }
-
-
+/* MEDIA */
 @media only screen and (min-width : 1250px) {
     .global {
-        width: 30%;
-        
+        width: 30%;       
     }
     .particularCountry {
         width: 30%;
     }
 }
-
 @media only screen and (max-width: 1270px) {
     #list {
         grid-template-columns: 1fr 1fr;

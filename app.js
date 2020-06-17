@@ -20,7 +20,7 @@ const covidInfo = async () => {
  
 }
 
-
+// GLOBAL 
     covidInfo()
     .then(data => {
         const globalInfo = data.Global;
@@ -42,6 +42,7 @@ const covidInfo = async () => {
     });
 
 
+// EACH COUNTRY
 
     form.addEventListener('submit' , e=> {
         e.preventDefault();
@@ -59,7 +60,7 @@ const covidInfo = async () => {
                     
                     const currentCountry = filterArray[0];
                     eachCounty.innerHTML = 
-                    `
+                    `<img src="https://www.countryflags.io/${currentCountry.CountryCode}/flat/24.png" class="img">
                     <p class="country">${currentCountry.Country}</p>
                     <p>New Cases : ${numberWithCommas(currentCountry.NewConfirmed)}</p>
                     <p>Total Cases : ${numberWithCommas(currentCountry.TotalConfirmed)}</p>
@@ -82,7 +83,7 @@ const covidInfo = async () => {
             const allCountry = data.Countries;
             allCountry.forEach(country => {
                 list.innerHTML += `<li>${country.Country} = ${country.Slug}</li>`
-                console.log(`${country.Country} = ${country.Slug}`);
+                //console.log(`${country.Country} = ${country.Slug}`);
             });
-        })
+        });
 
